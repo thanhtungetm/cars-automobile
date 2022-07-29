@@ -1,0 +1,39 @@
+#counter{
+    padding: 150px 0;
+    background-image: url('../images/contact_bg.jpg');
+}
+
+.counter{
+    display: flex;
+
+}
+.counter__heading{
+    width: 50%;
+    display: flex;
+
+    padding: 0 20px;
+
+}
+.counter__heading h1{
+    font-size: 40px;
+
+}
+.counter__numbers{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item h2{
+    font-size: 45px;
+}
+.item__desc{
+    color:#fff;
+}
+.item:nth-child(even){
+    color: var(--red);
+}
+.item:nth-child(odd){
+    color: var(--blue);
+}

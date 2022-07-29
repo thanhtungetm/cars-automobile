@@ -1,0 +1,158 @@
+/* header section */
+header {
+    background-color: transparent;
+    /* margin: 20px 0; */
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    transition: all 0.5s ease-in;
+}
+
+.logo {
+    max-width: 90px;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    top: 50%;
+    margin: 0 auto;
+    text-align: center;
+    transform: translateY(-50%)
+}
+
+.navbar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 30px 0 20px 0;
+}
+
+.navbar_phone {
+    margin: 0 10px;
+}
+
+.navbar__collapse {
+    display: flex;
+    flex-grow: 1;
+    z-index: 1;
+}
+
+ul.navbar__collapse__left {
+    display: flex;
+}
+
+ul.navbar__collapse__right li,
+ul.navbar__collapse__left li {
+    margin: 0 25px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+ul.navbar__collapse__right li:hover,
+ul.navbar__collapse__left li:hover {
+    color: var(--blue);
+    transition: var(--smooth);
+}
+
+
+ul.navbar__collapse__right {
+    display: flex;
+    margin-left: auto;
+}
+
+ul.navbar__social {
+    display: flex;
+
+}
+
+.navbar__social li {
+    margin: 10px
+}
+
+.menu {
+    display: none;
+}
+
+.fixed-header{
+    position: fixed;
+    background-color: #000;
+    transition: all 0.5s ease-in;
+    z-index: 100;
+}
+
+
+/* tablet responsive */
+@media only screen and (max-width: 768px) {
+
+    header {
+        background-color: #000;
+    }
+    .menu {
+        display: block;
+    }
+
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        flex-direction: column;
+        width: 60%;
+        background-color: var(--blue);
+        transform: translateX(-100%);
+        opacity: 0;
+        transition: var(--smooth);
+
+    }
+
+    /* show navbar */
+    .show-navbar {
+        transform: translateX(0);
+        transition: var(--smooth);
+        opacity: 1;
+    }
+
+    .navbar__collapse,
+    .navbar__collapse__left,
+    .navbar__collapse__right {
+        flex-direction: column;
+    }
+
+    ul.navbar__collapse__right li:hover,
+    ul.navbar__collapse__left li:hover {
+        color: var(--gray);
+        background-color:#fff;
+        transition: var(--smooth);
+    }
+
+    .navbar__social li {
+        margin: 10px
+    }
+
+    .navbar__collapse li {
+        margin: 15px;
+        padding: 5px 10px;
+    }
+
+    .menu-logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    .logo {
+        position: initial;
+        display: inline-block;
+        transform: none;
+        margin: unset;
+    }
+
+    .menu {
+        font-size: 35px;
+    }
+
+}
