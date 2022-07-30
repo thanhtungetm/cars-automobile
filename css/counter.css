@@ -47,6 +47,9 @@
     .counter__numbers{
         width: 100%;
     }
+    .counter__heading h1{
+        font-size: 35px;
+    }
     
 
 }
