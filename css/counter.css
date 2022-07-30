@@ -37,3 +37,28 @@
 .item:nth-child(odd){
     color: var(--blue);
 }
+@media only screen and (max-width: 768px) {
+    .counter{
+        flex-direction: column;
+    
+    }
+    .counter__heading{
+        width: 100%;
+    }
+    .counter__heading h1{
+        font-size: 25px!important;
+    }
+    .counter__numbers{
+        width: 100%;
+    }
+    .item h2{
+        font-size: 35px;
+    }
+    .item{
+        display:flex;
+        justify-items: center;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+}
