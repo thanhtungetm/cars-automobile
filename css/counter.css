@@ -41,5 +41,12 @@
     .counter{
         flex-direction: column;
     }
+    .counter__heading{
+        width:100%;
+    }
+    .counter__numbers{
+        width: 100%;
+    }
+    
 
 }
